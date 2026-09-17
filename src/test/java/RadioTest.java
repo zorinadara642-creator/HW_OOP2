@@ -115,6 +115,8 @@ public class RadioTest {
     @Test
     public void shouldDecreaseVolume() {
         Radio radio = new Radio();
+        radio.increaseVolume();
+
         radio.decreaseVolume();
 
         int expected = 0;
