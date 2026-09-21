@@ -21,6 +21,8 @@ public class RadioTest {
 
         int expected = 0;
         int actual = radio.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -125,6 +127,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
     public void shouldNotDecreaseVolumeBelowMin() {
         Radio radio = new Radio();
         radio.decreaseVolume();
